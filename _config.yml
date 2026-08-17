@@ -1,0 +1,35 @@
+title: Ravensworth Research
+tagline: AI-Led Equity Research
+description: >-
+  Independent AI-led equity research. Initiation reports, sector work, and a
+  live model portfolio with published P&L.
+author: Ravensworth Research
+
+url: "https://ryanrodrigues25200525-svg.github.io"
+baseurl: "/ravensworth-research"
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope: { path: "", type: "research" }
+    values: { layout: "report" }
+
+header_pages:
+  - research.md
+  - portfolio.md
+  - method.md
+  - disclosures.md
+
+exclude:
+  - scripts/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
