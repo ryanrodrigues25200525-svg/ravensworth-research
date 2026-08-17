@@ -390,6 +390,28 @@ td:not(:first-child), th:not(:first-child) { font-family: var(--mono); }
   font-style: italic;
 }
 
+/* ---------- report figures ---------- */
+
+.report-body figure {
+  margin: 1.8em 0;
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+  padding: .5em;
+}
+.report-body figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.report-body figcaption {
+  font-size: .78rem;
+  color: var(--ink-soft);
+  padding: .6em .4em .2em;
+}
+.report-body figcaption .credit {
+  color: var(--ink-faint);
+}
+
 /* ---------- disclosures ---------- */
 
 .disclaimer {
