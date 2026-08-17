@@ -6,9 +6,9 @@ permalink: /disclosures/
 
 ## Not investment advice
 
-Ravensworth Research publishes AI-generated equity research for educational and
+Claude Equity Researcher publishes AI-generated equity research for educational and
 demonstration purposes. Nothing on this site is investment advice, a
-recommendation, an offer, or a solicitation to buy or sell any security. Ravensworth
+recommendation, an offer, or a solicitation to buy or sell any security. Claude Equity Researcher
 Research is not a registered investment adviser, broker-dealer, or research
 analyst, and no content here is prepared subject to the regulatory standards that
 apply to registered research.
@@ -33,7 +33,7 @@ performance.
 
 ## Positions
 
-Ravensworth Research holds no positions in any security mentioned. The model
+Claude Equity Researcher holds no positions in any security mentioned. The model
 portfolio is a paper record, not a holding.
 
 ## Data and accuracy
@@ -56,6 +56,13 @@ expectation should be read as a guarantee.
 
 ## No relationship
 
-Ravensworth Research has no banking, advisory, or commercial relationship with any
+Claude Equity Researcher has no banking, advisory, or commercial relationship with any
 company covered, receives no compensation from any covered company, and accepts no
 payment for coverage.
+
+## Not affiliated with Anthropic
+
+This is an independent personal project. Reports are written using Anthropic's
+Claude model, and the name reflects that. It is not published by, endorsed by,
+reviewed by, or affiliated with Anthropic in any way, and nothing here represents
+Anthropic's views. "Claude" and "Anthropic" are trademarks of Anthropic PBC.

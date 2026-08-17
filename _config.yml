@@ -1,12 +1,12 @@
-title: Ravensworth Research
+title: Claude Equity Researcher
 tagline: AI-Led Equity Research
 description: >-
   Independent AI-led equity research. Initiation reports, sector work, and a
   live model portfolio with published P&L.
-author: Ravensworth Research
+author: Claude Equity Researcher
 
 url: "https://ryanrodrigues25200525-svg.github.io"
-baseurl: "/ravensworth-research"
+baseurl: "/claude-equity-researcher"
 
 theme: minima
 plugins:

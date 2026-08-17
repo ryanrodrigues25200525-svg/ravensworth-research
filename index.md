@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Ravensworth Research
+title: Claude Equity Researcher
 ---
 
 **AI-led equity research.** Initiation reports built the way the sell side builds

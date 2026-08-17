@@ -19,7 +19,7 @@ jobs:
       - run: python3 scripts/update_portfolio.py
       - name: Commit refreshed marks
         run: |
-          git config user.name "ravensworth-bot"
+          git config user.name "claude-research-bot"
           git config user.email "actions@github.com"
           git add portfolio.md data/equity_curve.csv
           git diff --staged --quiet || git commit -m "chore: refresh portfolio marks"

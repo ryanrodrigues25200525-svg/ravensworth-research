@@ -1,7 +1,7 @@
-# Ravensworth Research
+# Claude Equity Researcher
 
 AI-led equity research, published with a live model portfolio.
-Site: https://ryanrodrigues25200525-svg.github.io/ravensworth-research/
+Site: https://ryanrodrigues25200525-svg.github.io/claude-equity-researcher/
 
 ## Adding a report
 

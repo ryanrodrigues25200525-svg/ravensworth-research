@@ -10,7 +10,7 @@ closed positions stay on the page with their realised result. Starting capital i
 $1,000,000. Positions are sized by conviction, not equally.
 
 Marks are refreshed automatically on trading days after the US close. The source
-of truth is [`data/positions.csv`](https://github.com/ryanrodrigues25200525-svg/ravensworth-research/blob/main/data/positions.csv),
+of truth is [`data/positions.csv`](https://github.com/ryanrodrigues25200525-svg/claude-equity-researcher/blob/main/data/positions.csv),
 which opens directly in Excel or Numbers.
 
 <!-- PORTFOLIO:START -->
