@@ -398,11 +398,23 @@ td:not(:first-child), th:not(:first-child) { font-family: var(--mono); }
   background: var(--paper-raised);
   padding: .5em;
 }
-.report-body figure img {
+.report-body figure img,
+.report-body figure svg {
   display: block;
   width: 100%;
   height: auto;
 }
+.chart-line { fill: none; stroke: var(--navy); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.chart-area { fill: var(--navy); opacity: .10; }
+.chart-grid { stroke: var(--rule); stroke-width: 1; }
+.chart-axis-label { fill: var(--ink-faint); font-family: var(--mono); font-size: 9px; }
+.chart-value-label { fill: var(--ink); font-family: var(--mono); font-size: 11px; font-weight: 600; }
+.chart-category-label { fill: var(--ink-soft); font-family: var(--sans); font-size: 11px; }
+.chart-dot { fill: var(--navy); stroke: var(--paper-raised); stroke-width: 2; }
+.bar-peer { fill: var(--rule-strong); }
+.bar-highlight { fill: var(--brass); }
+.bar-neg { fill: var(--sell); }
+.bar-pos { fill: var(--buy); }
 .report-body figcaption {
   font-size: .78rem;
   color: var(--ink-soft);
