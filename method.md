@@ -13,25 +13,40 @@ that would force a downgrade.
 
 ## Process
 
-Each initiation runs the same sequence:
+Every initiation runs the same spine — thesis, risks, catalysts, position — but
+the middle of the report is not templated. A memory-chip maker and a regional
+bank do not fail for the same reasons, so the sector analysis, the model, and
+the valuation frame are built from whichever metrics actually govern that
+sector, not a generic checklist stretched to fit.
 
 1. **Thesis** — one paragraph stating what the market believes, what we believe
    instead, and why the gap exists. If the thesis is only "it's cheap", there is
    no report.
-2. **Sector analysis** — market structure, demand drivers, supply and capacity,
-   pricing power, where profit pools sit and which way they are migrating.
-3. **Company deep dive** — segment economics, unit economics, competitive
-   position, capital allocation record, management incentives, accounting
-   quality.
-4. **Model** — revenue built from drivers rather than a growth rate, margin path,
-   capex and working capital, free cash flow.
-5. **Valuation** — DCF with stated assumptions, comps on the multiple that
-   actually governs the name, plus a bear / base / bull scenario set.
-6. **Risks** — what breaks the thesis, ranked, with the tell for each. Including
+2. **Sector analysis, company deep dive, model and valuation** — run through
+   the metric pack for that sector. See below for what changes.
+3. **Risks** — what breaks the thesis, ranked, with the tell for each. Including
    the ones that argue against the position.
-7. **Catalysts** — dated where possible, with what counts as confirmation.
-8. **Position** — rating, price target, horizon, and a sized entry in the
+4. **Catalysts** — dated where possible, with what counts as confirmation.
+5. **Position** — rating, price target, horizon, and a sized entry in the
    [model portfolio]({{ '/portfolio/' | relative_url }}).
+
+### Sector metric packs
+
+What "the sector analysis" and "the model" mean in practice, by sector:
+
+| Sector | What drives the sector map | What the model is built from | What governs the valuation |
+|---|---|---|---|
+| Semiconductors / hardware | Capacity utilization, node cost curves, inventory in the channel | Unit shipments × ASP, gross margin vs. utilization | EV/NTM EBITDA against cycle position — steady-state P/E misreads a cyclical |
+| Software / SaaS | Net revenue retention, land-and-expand economics, switching-cost moat | ARR build, rule-of-40, gross margin ceiling | EV/ARR vs. growth plus margin; DCF on terminal FCF margin, not current one |
+| Banks / financials | Net interest margin, deposit beta, credit cycle stage, capital ratios | Net interest income plus fees minus provisions, ROTCE | P/TBV vs. ROTCE — a DCF on a bank is usually the wrong tool |
+| Retail / consumer | Same-store sales, unit economics, inventory turns, private-label mix | Comp growth plus unit rollout, full margin bridge | EV/EBITDA against the peer set, not a growth multiple |
+| Energy / commodities | Reserve life, cost-curve position, strip pricing, hedge book | Production × realized price minus opex, capex intensity | NAV/DCF at strip vs. spot, EV/EBITDAX |
+| Biotech / pharma | Pipeline stage and probability of success, patent cliff exposure, payer dynamics | Risk-adjusted NPV per asset | Sum-of-the-parts rNPV — a blended multiple hides single-asset risk |
+
+Names outside these six get the pack for their closest comp set; the report
+states which one and why. The point is not variety for its own sake — using a
+bank's P/TBV framework on a semiconductor name, or a cyclical's utilization
+lens on a SaaS company, produces a wrong answer that looks rigorous.
 
 ## Data
 
