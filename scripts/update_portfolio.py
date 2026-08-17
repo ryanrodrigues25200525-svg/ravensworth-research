@@ -53,6 +53,15 @@ def pct_span(x):
     return f'<span class="{"pos" if x >= 0 else "neg"}">{x:+.1f}%</span>'
 
 
+def badge(rating):
+    return f'<span class="badge {rating.strip().lower()}">{rating.strip()}</span>'
+
+
+def direction_tag(direction):
+    d = direction.strip().lower()
+    return f'<span class="direction {d}">{"L" if d == "long" else "S"}</span>'
+
+
 def sparkline(points, w=640, h=120):
     """Inline SVG equity curve. points = [(date, equity), ...]"""
     if len(points) < 2:
@@ -68,11 +77,11 @@ def sparkline(points, w=640, h=120):
     ]
     line = " ".join(f"{x:.1f},{y:.1f}" for x, y in xy)
     area = f"{pad},{h - pad} {line} {w - pad},{h - pad}"
-    colour = "#0f6b47" if vals[-1] >= vals[0] else "#9a2b25"
+    colour = "#2f5c3f" if vals[-1] >= vals[0] else "#7a2e22"
     base = h - pad - (START_CAPITAL - lo) / span * (h - 2 * pad)
     baseline = (
         f'<line x1="{pad}" y1="{base:.1f}" x2="{w - pad}" y2="{base:.1f}" '
-        f'stroke="#98a2b0" stroke-width="1" stroke-dasharray="3 3"/>'
+        f'stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/>'
         if lo <= START_CAPITAL <= hi
         else ""
     )
@@ -101,46 +110,61 @@ def render(rows, stamp):
         for r in open_rows
     )
 
+    def tile(label, value):
+        return f'<div class="stat-tile"><span class="stat-label">{label}</span><span class="stat-value">{value}</span></div>'
+
     out = [sparkline(read_curve())]
-    out.append("| Metric | Value |\n|---|---|")
-    out.append(f"| Equity | {money(equity)} |")
-    out.append(f"| Total return | {pct_span((equity / START_CAPITAL - 1) * 100)} |")
-    out.append(f"| Unrealised P&L | {money(unrealised)} |")
-    out.append(f"| Realised P&L | {money(realised)} |")
-    out.append(f"| Open positions | {len(open_rows)} |")
-    out.append(f"| Gross exposure | {gross / equity * 100:.0f}% |" if equity else "")
-    out.append(f"| Net exposure | {net / equity * 100:.0f}% |" if equity else "")
+    out.append('<div class="stat-strip">')
+    out.append(tile("Equity", money(equity)))
+    out.append(tile("Total return", pct_span((equity / START_CAPITAL - 1) * 100)))
+    out.append(tile("Unrealised P&amp;L", money(unrealised)))
+    out.append(tile("Realised P&amp;L", money(realised)))
+    out.append(tile("Open positions", str(len(open_rows))))
+    if equity:
+        out.append(tile("Gross exposure", f"{gross / equity * 100:.0f}%"))
+        out.append(tile("Net exposure", f"{net / equity * 100:.0f}%"))
+    out.append("</div>")
 
     if open_rows:
-        out.append("\n### Open positions\n")
-        out.append(
-            "| Ticker | L/S | Rating | Opened | Entry | Mark | Target | Weight | Return | P&L |\n"
-            "|---|---|---|---|---|---|---|---|---|---|"
-        )
+        out.append("<h3>Open positions</h3>")
+        out.append('<div class="table-wrap"><table class="ledger"><thead><tr>'
+                    "<th>Ticker</th><th>L/S</th><th>Rating</th><th>Opened</th><th>Entry</th>"
+                    "<th>Mark</th><th>Target</th><th>Weight</th><th>Return</th><th>P&amp;L</th>"
+                    "</tr></thead><tbody>")
         for r in sorted(open_rows, key=lambda r: -abs(r["_pnl"])):
             entry, sh = float(r["entry_price"]), float(r["shares"])
             ret = r["_pnl"] / (entry * sh) * 100 if entry and sh else 0.0
-            link = f"[{r['ticker']}]({{{{ '{r['report']}' | relative_url }}}})" if r["report"] else r["ticker"]
-            out.append(
-                f"| {link} | {r['direction'][:1].upper()} | {r['rating']} "
-                f"| {r['open_date']} | ${entry:,.2f} | ${r['_mark']:,.2f} "
-                f"| ${float(r['target_price']):,.2f} | {abs(r['_mark'] * sh) / equity * 100:.1f}% "
-                f"| {pct_span(ret)} | {money(r['_pnl'])} |"
+            ticker = (
+                f'<a href="{{{{ \'{r["report"]}\' | relative_url }}}}">{r["ticker"]}</a>'
+                if r["report"] else r["ticker"]
             )
+            out.append(
+                f"<tr><td>{ticker}</td><td>{direction_tag(r['direction'])}</td>"
+                f"<td>{badge(r['rating'])}</td><td>{r['open_date']}</td>"
+                f"<td>${entry:,.2f}</td><td>${r['_mark']:,.2f}</td>"
+                f"<td>${float(r['target_price']):,.2f}</td>"
+                f"<td>{abs(r['_mark'] * sh) / equity * 100:.1f}%</td>"
+                f"<td>{pct_span(ret)}</td><td>{money(r['_pnl'])}</td></tr>"
+            )
+        out.append("</tbody></table></div>")
 
     if closed:
-        out.append("\n### Closed positions\n")
-        out.append("| Ticker | L/S | Opened | Closed | Entry | Exit | Return | P&L |\n|---|---|---|---|---|---|---|---|")
+        out.append("<h3>Closed positions</h3>")
+        out.append('<div class="table-wrap"><table class="ledger"><thead><tr>'
+                    "<th>Ticker</th><th>L/S</th><th>Opened</th><th>Closed</th><th>Entry</th>"
+                    "<th>Exit</th><th>Return</th><th>P&amp;L</th></tr></thead><tbody>")
         for r in closed:
             entry, ex, sh = float(r["entry_price"]), float(r["close_price"]), float(r["shares"])
             p = pnl(entry, ex, sh, r["direction"])
             out.append(
-                f"| {r['ticker']} | {r['direction'][:1].upper()} | {r['open_date']} "
-                f"| {r['close_date']} | ${entry:,.2f} | ${ex:,.2f} "
-                f"| {pct_span(p / (entry * sh) * 100)} | {money(p)} |"
+                f"<tr><td>{r['ticker']}</td><td>{direction_tag(r['direction'])}</td>"
+                f"<td>{r['open_date']}</td><td>{r['close_date']}</td>"
+                f"<td>${entry:,.2f}</td><td>${ex:,.2f}</td>"
+                f"<td>{pct_span(p / (entry * sh) * 100)}</td><td>{money(p)}</td></tr>"
             )
+        out.append("</tbody></table></div>")
 
-    out.append(f'\n<p class="stamp">Marks refreshed {stamp}.</p>')
+    out.append(f'<p class="stamp">Marks refreshed {stamp}.</p>')
     return equity, "\n".join(x for x in out if x)
 
 

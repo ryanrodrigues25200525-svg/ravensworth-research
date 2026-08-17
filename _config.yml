@@ -8,7 +8,7 @@ author: Ravensworth Research
 url: "https://ryanrodrigues25200525-svg.github.io"
 baseurl: "/ravensworth-research"
 
-theme: minima
+markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -21,12 +21,8 @@ collections:
 defaults:
   - scope: { path: "", type: "research" }
     values: { layout: "report" }
-
-header_pages:
-  - research.md
-  - portfolio.md
-  - method.md
-  - disclosures.md
+  - scope: { path: "", type: "pages" }
+    values: { layout: "page" }
 
 exclude:
   - scripts/

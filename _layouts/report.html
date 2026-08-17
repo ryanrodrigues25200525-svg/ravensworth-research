@@ -1,33 +1,32 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="report">
   <div class="report-head">
-    <span class="kind">{{ page.kind | default: "Initiation of Coverage" }}{% if page.sector %} &middot; {{ page.sector }}{% endif %}</span>
-    <span class="ticker">{{ page.ticker }}</span>
-    &nbsp;<span>{{ page.company }}</span>
-    <dl>
-      <dt>Rating</dt>
-      <dd class="rating {{ page.rating | downcase }}">{{ page.rating }}</dd>
-      <dt>Price</dt>
-      <dd>{{ page.price }}</dd>
-      <dt>Price target</dt>
-      <dd>{{ page.target }}</dd>
-      <dt>Upside</dt>
-      <dd>{{ page.upside }}</dd>
-      {% if page.market_cap %}<dt>Market cap</dt><dd>{{ page.market_cap }}</dd>{% endif %}
-      {% if page.horizon %}<dt>Horizon</dt><dd>{{ page.horizon }}</dd>{% endif %}
+    <div class="report-head-top">
+      <span class="eyebrow">{{ page.kind | default: "Initiation of Coverage" }}{% if page.sector %} &middot; {{ page.sector }}{% endif %}</span>
+      <span class="ticker">{{ page.ticker }}</span>
+    </div>
+    <h1>{{ page.title }}</h1>
+    <p class="report-company">{{ page.company }}</p>
+    <dl class="report-stats">
+      <div><dt>Rating</dt><dd class="badge {{ page.rating | downcase }}">{{ page.rating }}</dd></div>
+      <div><dt>Price</dt><dd>{{ page.price }}</dd></div>
+      <div><dt>Price target</dt><dd>{{ page.target }}</dd></div>
+      <div><dt>Upside</dt><dd>{{ page.upside }}</dd></div>
+      {% if page.market_cap %}<div><dt>Market cap</dt><dd>{{ page.market_cap }}</dd></div>{% endif %}
+      {% if page.horizon %}<div><dt>Horizon</dt><dd>{{ page.horizon }}</dd></div>{% endif %}
     </dl>
   </div>
 
-  <h1>{{ page.title }}</h1>
-  <p class="stamp">Published {{ page.date | date: "%d %b %Y" }}
-    {%- if page.data_as_of %} &middot; market data as of {{ page.data_as_of }}{% endif %}</p>
+  <p class="stamp">Published {{ page.date | date: "%d %b %Y" }}{% if page.data_as_of %} &middot; market data as of {{ page.data_as_of }}{% endif %}</p>
 
-  {{ content }}
+  <div class="report-body">
+    {{ content }}
+  </div>
 
   <div class="disclaimer">
-    <strong>Disclosure.</strong> Ravensworth Research is AI-led research published for
+    <strong>Disclosure.</strong> {{ site.title }} is AI-led research published for
     education and demonstration. It is not investment advice, not a recommendation to
     buy or sell any security, and not a solicitation. Positions shown in the
     <a href="{{ '/portfolio/' | relative_url }}">model portfolio</a> are hypothetical

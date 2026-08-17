@@ -6,16 +6,15 @@ permalink: /research/
 
 {% assign reports = site.research | sort: "date" | reverse %}
 {% if reports.size == 0 %}
-*Initiating coverage shortly.*
+<p class="empty-state">Initiating coverage shortly.</p>
 {% else %}
 {% for r in reports %}
-### [{{ r.ticker }} — {{ r.title }}]({{ r.url | relative_url }})
-
-<span class="stamp">{{ r.kind | default: "Initiation" }} &middot; {{ r.date | date: "%d %b %Y" }}
-&middot; <span class="rating {{ r.rating | downcase }}">{{ r.rating }}</span>
-&middot; target {{ r.target }} ({{ r.upside }})</span>
-
-{{ r.summary }}
-
+<div class="research-entry">
+  <h3><a href="{{ r.url | relative_url }}">{{ r.ticker }} — {{ r.title }}</a></h3>
+  <p class="stamp">{{ r.kind | default: "Initiation" }} &middot; {{ r.date | date: "%d %b %Y" }}
+    &middot; <span class="badge {{ r.rating | downcase }}">{{ r.rating }}</span>
+    &middot; target {{ r.target }} ({{ r.upside }})</p>
+  <p>{{ r.summary }}</p>
+</div>
 {% endfor %}
 {% endif %}

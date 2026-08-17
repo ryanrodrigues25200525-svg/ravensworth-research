@@ -14,7 +14,7 @@ of truth is [`data/positions.csv`](https://github.com/ryanrodrigues25200525-svg/
 which opens directly in Excel or Numbers.
 
 <!-- PORTFOLIO:START -->
-*No positions yet — the portfolio opens with the first initiation report.*
+<p class="empty-state">No positions yet — the portfolio opens with the first initiation report.</p>
 <!-- PORTFOLIO:END -->
 
 <div class="disclaimer">

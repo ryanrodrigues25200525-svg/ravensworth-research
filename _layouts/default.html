@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <span class="eyebrow">Independent &middot; AI-Led Research</span>
+        <span class="eyebrow">Coverage {{ site.research.size }} &middot; Model Portfolio NAV $1,000,000 Start</span>
+      </div>
+      <div class="masthead-main">
+        <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' %} aria-current="page"{% endif %}>Research</a>
+          <a href="{{ '/portfolio/' | relative_url }}"{% if page.url == '/portfolio/' %} aria-current="page"{% endif %}>Portfolio</a>
+          <a href="{{ '/method/' | relative_url }}"{% if page.url == '/method/' %} aria-current="page"{% endif %}>Method</a>
+          <a href="{{ '/disclosures/' | relative_url }}"{% if page.url == '/disclosures/' %} aria-current="page"{% endif %}>Disclosures</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</span>
+      <span>Independent &middot; AI-led &middot; Not investment advice</span>
+      <nav aria-label="Footer">
+        <a href="{{ '/disclosures/' | relative_url }}">Disclosures</a>
+        <a href="{{ '/method/' | relative_url }}">Method</a>
+        <a href="https://github.com/ryanrodrigues25200525-svg/ravensworth-research">Source</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
