@@ -4,14 +4,17 @@ title: Model Portfolio
 permalink: /portfolio/
 ---
 
-Every published rating opens a position here at the closing price on the day the
-report goes out. Nothing is added retroactively and nothing is quietly dropped —
-closed positions stay on the page with their realised result. Starting capital is
-$1,000,000. Positions are sized by conviction, not equally.
+<p class="portfolio-lede">Every published rating opens a position here at the
+closing price on the day the report goes out. Nothing is added retroactively and
+nothing is quietly dropped — closed positions stay on the page with their realised
+result.</p>
 
-Marks are refreshed automatically on trading days after the US close. The source
-of truth is [`data/positions.csv`](https://github.com/ryanrodrigues25200525-svg/ravensworth-research/blob/main/data/positions.csv),
-which opens directly in Excel or Numbers.
+<dl class="portfolio-facts">
+  <div><dt>Starting capital</dt><dd>$1,000,000</dd></div>
+  <div><dt>Sizing</dt><dd>By conviction, not equal weight</dd></div>
+  <div><dt>Marking</dt><dd>After the US close, on trading days</dd></div>
+  <div><dt>Source</dt><dd><a class="btn" href="https://raw.githubusercontent.com/ryanrodrigues25200525-svg/ravensworth-research/main/data/positions.csv" download>positions.csv</a></dd></div>
+</dl>
 
 <!-- PORTFOLIO:START -->
 <div class="stat-strip">
