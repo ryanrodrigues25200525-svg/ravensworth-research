@@ -17,22 +17,22 @@ result.</p>
 </dl>
 
 <!-- PORTFOLIO:START -->
-<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,39.1 112.0,112.0 216.0,62.2 320.0,8.0 424.0,34.0 528.0,92.7 632.0,50.5 632,112" fill="#7a2e22" opacity="0.10"/><line x1="8" y1="39.1" x2="632" y2="39.1" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,39.1 112.0,112.0 216.0,62.2 320.0,8.0 424.0,34.0 528.0,92.7 632.0,50.5" fill="none" stroke="#7a2e22" stroke-width="2"/></svg>
+<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,39.1 97.1,112.0 186.3,62.2 275.4,8.0 364.6,34.0 453.7,92.7 542.9,50.5 632.0,38.2 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="39.1" x2="632" y2="39.1" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,39.1 97.1,112.0 186.3,62.2 275.4,8.0 364.6,34.0 453.7,92.7 542.9,50.5 632.0,38.2" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
 <div class="stat-strip">
-<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,000,013</span></div>
-<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.0%</span></span></div>
-<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">$13</span></div>
+<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$999,140</span></div>
+<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="neg">-0.1%</span></span></div>
+<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">-$860</span></div>
 <div class="stat-tile"><span class="stat-label">Realised P&amp;L</span><span class="stat-value">$0</span></div>
 <div class="stat-tile"><span class="stat-label">Open positions</span><span class="stat-value">2</span></div>
 <div class="stat-tile"><span class="stat-label">Gross exposure</span><span class="stat-value">4%</span></div>
-<div class="stat-tile"><span class="stat-label">Net exposure</span><span class="stat-value">1%</span></div>
+<div class="stat-tile"><span class="stat-label">Net exposure</span><span class="stat-value">0%</span></div>
 </div>
 <h3>Open positions</h3>
 <div class="table-wrap"><table class="ledger"><thead><tr><th>Ticker</th><th>L/S</th><th>Rating</th><th>Opened</th><th>Entry</th><th>Mark</th><th>Target</th><th>Weight</th><th>Return</th><th>P&amp;L</th></tr></thead><tbody>
-<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$355.59</td><td>$340.00</td><td>1.8%</td><td><span class="pos">+9.4%</span></td><td>$1,847</td></tr>
-<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$938.40</td><td>$940.00</td><td>2.3%</td><td><span class="neg">-7.2%</span></td><td>-$1,834</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$935.39</td><td>$940.00</td><td>2.3%</td><td><span class="neg">-7.5%</span></td><td>-$1,909</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$371.54</td><td>$340.00</td><td>1.9%</td><td><span class="pos">+5.3%</span></td><td>$1,049</td></tr>
 </tbody></table></div>
-<p class="stamp">Marks refreshed 27 Aug 2026 00:56 UTC.</p>
+<p class="stamp">Marks refreshed 28 Aug 2026 05:31 UTC.</p>
 <!-- PORTFOLIO:END -->
 
 <div class="disclaimer">
