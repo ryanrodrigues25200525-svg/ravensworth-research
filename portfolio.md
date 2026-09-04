@@ -17,11 +17,11 @@ result.</p>
 </dl>
 
 <!-- PORTFOLIO:START -->
-<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,39.1 64.7,112.0 121.5,62.2 178.2,8.0 234.9,34.0 291.6,92.7 348.4,50.5 405.1,38.2 461.8,93.7 518.5,88.9 575.3,90.9 632.0,47.2 632,112" fill="#7a2e22" opacity="0.10"/><line x1="8" y1="39.1" x2="632" y2="39.1" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,39.1 64.7,112.0 121.5,62.2 178.2,8.0 234.9,34.0 291.6,92.7 348.4,50.5 405.1,38.2 461.8,93.7 518.5,88.9 575.3,90.9 632.0,47.2" fill="none" stroke="#7a2e22" stroke-width="2"/></svg>
+<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,39.1 60.0,112.0 112.0,62.2 164.0,8.0 216.0,34.0 268.0,92.7 320.0,50.5 372.0,38.2 424.0,93.7 476.0,88.9 528.0,90.9 580.0,47.2 632.0,11.9 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="39.1" x2="632" y2="39.1" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,39.1 60.0,112.0 112.0,62.2 164.0,8.0 216.0,34.0 268.0,92.7 320.0,50.5 372.0,38.2 424.0,93.7 476.0,88.9 528.0,90.9 580.0,47.2 632.0,11.9" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
 <div class="stat-strip">
-<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,000,428</span></div>
-<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.0%</span></span></div>
-<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">$428</span></div>
+<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,001,852</span></div>
+<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.2%</span></span></div>
+<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">$1,852</span></div>
 <div class="stat-tile"><span class="stat-label">Realised P&amp;L</span><span class="stat-value">$0</span></div>
 <div class="stat-tile"><span class="stat-label">Open positions</span><span class="stat-value">2</span></div>
 <div class="stat-tile"><span class="stat-label">Gross exposure</span><span class="stat-value">4%</span></div>
@@ -29,10 +29,10 @@ result.</p>
 </div>
 <h3>Open positions</h3>
 <div class="table-wrap"><table class="ledger"><thead><tr><th>Ticker</th><th>L/S</th><th>Rating</th><th>Opened</th><th>Entry</th><th>Mark</th><th>Target</th><th>Weight</th><th>Return</th><th>P&amp;L</th></tr></thead><tbody>
-<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$357.16</td><td>$340.00</td><td>1.8%</td><td><span class="pos">+9.0%</span></td><td>$1,768</td></tr>
-<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$958.16</td><td>$940.00</td><td>2.4%</td><td><span class="neg">-5.3%</span></td><td>-$1,340</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$357.89</td><td>$340.00</td><td>1.8%</td><td><span class="pos">+8.8%</span></td><td>$1,731</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$1,016.59</td><td>$940.00</td><td>2.5%</td><td><span class="pos">+0.5%</span></td><td>$121</td></tr>
 </tbody></table></div>
-<p class="stamp">Marks refreshed 03 Sep 2026 23:23 UTC.</p>
+<p class="stamp">Marks refreshed 04 Sep 2026 23:08 UTC.</p>
 <!-- PORTFOLIO:END -->
 
 <div class="disclaimer">
