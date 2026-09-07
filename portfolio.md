@@ -17,7 +17,7 @@ result.</p>
 </dl>
 
 <!-- PORTFOLIO:START -->
-<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,39.1 60.0,112.0 112.0,62.2 164.0,8.0 216.0,34.0 268.0,92.7 320.0,50.5 372.0,38.2 424.0,93.7 476.0,88.9 528.0,90.9 580.0,47.2 632.0,11.9 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="39.1" x2="632" y2="39.1" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,39.1 60.0,112.0 112.0,62.2 164.0,8.0 216.0,34.0 268.0,92.7 320.0,50.5 372.0,38.2 424.0,93.7 476.0,88.9 528.0,90.9 580.0,47.2 632.0,11.9" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
+<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,72.2 56.0,112.0 104.0,84.8 152.0,55.2 200.0,69.4 248.0,101.5 296.0,78.4 344.0,71.7 392.0,102.0 440.0,99.4 488.0,100.5 536.0,76.6 584.0,57.3 632.0,8.0 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="72.2" x2="632" y2="72.2" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,72.2 56.0,112.0 104.0,84.8 152.0,55.2 200.0,69.4 248.0,101.5 296.0,78.4 344.0,71.7 392.0,102.0 440.0,99.4 488.0,100.5 536.0,76.6 584.0,57.3 632.0,8.0" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
 <div class="stat-strip">
 <div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,001,852</span></div>
 <div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.2%</span></span></div>
@@ -32,7 +32,7 @@ result.</p>
 <tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$357.89</td><td>$340.00</td><td>1.8%</td><td><span class="pos">+8.8%</span></td><td>$1,731</td></tr>
 <tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$1,016.59</td><td>$940.00</td><td>2.5%</td><td><span class="pos">+0.5%</span></td><td>$121</td></tr>
 </tbody></table></div>
-<p class="stamp">Marks refreshed 04 Sep 2026 23:08 UTC.</p>
+<p class="stamp">Marks refreshed 07 Sep 2026 23:38 UTC.</p>
 <!-- PORTFOLIO:END -->
 
 <div class="disclaimer">
