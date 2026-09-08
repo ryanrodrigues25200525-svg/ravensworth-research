@@ -17,11 +17,11 @@ result.</p>
 </dl>
 
 <!-- PORTFOLIO:START -->
-<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,72.2 56.0,112.0 104.0,84.8 152.0,55.2 200.0,69.4 248.0,101.5 296.0,78.4 344.0,71.7 392.0,102.0 440.0,99.4 488.0,100.5 536.0,76.6 584.0,57.3 632.0,8.0 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="72.2" x2="632" y2="72.2" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,72.2 56.0,112.0 104.0,84.8 152.0,55.2 200.0,69.4 248.0,101.5 296.0,78.4 344.0,71.7 392.0,102.0 440.0,99.4 488.0,100.5 536.0,76.6 584.0,57.3 632.0,8.0" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
+<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,72.2 52.6,112.0 97.1,84.8 141.7,55.2 186.3,69.4 230.9,101.5 275.4,78.4 320.0,71.7 364.6,102.0 409.1,99.4 453.7,100.5 498.3,76.6 542.9,57.3 587.4,8.0 632.0,8.0 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="72.2" x2="632" y2="72.2" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,72.2 52.6,112.0 97.1,84.8 141.7,55.2 186.3,69.4 230.9,101.5 275.4,78.4 320.0,71.7 364.6,102.0 409.1,99.4 453.7,100.5 498.3,76.6 542.9,57.3 587.4,8.0 632.0,8.0" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
 <div class="stat-strip">
-<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,001,852</span></div>
-<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.2%</span></span></div>
-<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">$1,852</span></div>
+<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,000,911</span></div>
+<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.1%</span></span></div>
+<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">$911</span></div>
 <div class="stat-tile"><span class="stat-label">Realised P&amp;L</span><span class="stat-value">$0</span></div>
 <div class="stat-tile"><span class="stat-label">Open positions</span><span class="stat-value">2</span></div>
 <div class="stat-tile"><span class="stat-label">Gross exposure</span><span class="stat-value">4%</span></div>
@@ -29,10 +29,10 @@ result.</p>
 </div>
 <h3>Open positions</h3>
 <div class="table-wrap"><table class="ledger"><thead><tr><th>Ticker</th><th>L/S</th><th>Rating</th><th>Opened</th><th>Entry</th><th>Mark</th><th>Target</th><th>Weight</th><th>Return</th><th>P&amp;L</th></tr></thead><tbody>
-<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$357.89</td><td>$340.00</td><td>1.8%</td><td><span class="pos">+8.8%</span></td><td>$1,731</td></tr>
-<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$1,016.59</td><td>$940.00</td><td>2.5%</td><td><span class="pos">+0.5%</span></td><td>$121</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$368.56</td><td>$340.00</td><td>1.8%</td><td><span class="pos">+6.1%</span></td><td>$1,198</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$1,000.26</td><td>$940.00</td><td>2.5%</td><td><span class="neg">-1.1%</span></td><td>-$287</td></tr>
 </tbody></table></div>
-<p class="stamp">Marks refreshed 07 Sep 2026 23:38 UTC.</p>
+<p class="stamp">Marks refreshed 08 Sep 2026 23:30 UTC.</p>
 <!-- PORTFOLIO:END -->
 
 <div class="disclaimer">
