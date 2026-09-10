@@ -17,11 +17,11 @@ result.</p>
 </dl>
 
 <!-- PORTFOLIO:START -->
-<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,72.2 49.6,112.0 91.2,84.8 132.8,55.2 174.4,69.4 216.0,101.5 257.6,78.4 299.2,71.7 340.8,102.0 382.4,99.4 424.0,100.5 465.6,76.6 507.2,57.3 548.8,8.0 590.4,8.0 632.0,40.6 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="72.2" x2="632" y2="72.2" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,72.2 49.6,112.0 91.2,84.8 132.8,55.2 174.4,69.4 216.0,101.5 257.6,78.4 299.2,71.7 340.8,102.0 382.4,99.4 424.0,100.5 465.6,76.6 507.2,57.3 548.8,8.0 590.4,8.0 632.0,40.6" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
+<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,72.2 47.0,112.0 86.0,84.8 125.0,55.2 164.0,69.4 203.0,101.5 242.0,78.4 281.0,71.7 320.0,102.0 359.0,99.4 398.0,100.5 437.0,76.6 476.0,57.3 515.0,8.0 554.0,8.0 593.0,40.6 632.0,9.6 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="72.2" x2="632" y2="72.2" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,72.2 47.0,112.0 86.0,84.8 125.0,55.2 164.0,69.4 203.0,101.5 242.0,78.4 281.0,71.7 320.0,102.0 359.0,99.4 398.0,100.5 437.0,76.6 476.0,57.3 515.0,8.0 554.0,8.0 593.0,40.6 632.0,9.6" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
 <div class="stat-strip">
-<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,001,808</span></div>
-<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.2%</span></span></div>
-<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">$1,807</span></div>
+<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,000,726</span></div>
+<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.1%</span></span></div>
+<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">$726</span></div>
 <div class="stat-tile"><span class="stat-label">Realised P&amp;L</span><span class="stat-value">$0</span></div>
 <div class="stat-tile"><span class="stat-label">Open positions</span><span class="stat-value">2</span></div>
 <div class="stat-tile"><span class="stat-label">Gross exposure</span><span class="stat-value">4%</span></div>
@@ -29,10 +29,10 @@ result.</p>
 </div>
 <h3>Open positions</h3>
 <div class="table-wrap"><table class="ledger"><thead><tr><th>Ticker</th><th>L/S</th><th>Rating</th><th>Opened</th><th>Entry</th><th>Mark</th><th>Target</th><th>Weight</th><th>Return</th><th>P&amp;L</th></tr></thead><tbody>
-<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$364.38</td><td>$340.00</td><td>1.8%</td><td><span class="pos">+7.2%</span></td><td>$1,407</td></tr>
-<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$1,027.77</td><td>$940.00</td><td>2.6%</td><td><span class="pos">+1.6%</span></td><td>$400</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$360.83</td><td>$340.00</td><td>1.8%</td><td><span class="pos">+8.1%</span></td><td>$1,584</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$977.41</td><td>$940.00</td><td>2.4%</td><td><span class="neg">-3.4%</span></td><td>-$859</td></tr>
 </tbody></table></div>
-<p class="stamp">Marks refreshed 09 Sep 2026 23:23 UTC.</p>
+<p class="stamp">Marks refreshed 10 Sep 2026 23:17 UTC.</p>
 <!-- PORTFOLIO:END -->
 
 <div class="disclaimer">
