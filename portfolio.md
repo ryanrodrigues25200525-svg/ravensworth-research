@@ -17,11 +17,11 @@ result.</p>
 </dl>
 
 <!-- PORTFOLIO:START -->
-<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,72.2 37.7,112.0 67.4,84.8 97.1,55.2 126.9,69.4 156.6,101.5 186.3,78.4 216.0,71.7 245.7,102.0 275.4,99.4 305.1,100.5 334.9,76.6 364.6,57.3 394.3,8.0 424.0,8.0 453.7,40.6 483.4,9.6 513.1,47.0 542.9,50.9 572.6,65.4 602.3,52.8 632.0,54.2 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="72.2" x2="632" y2="72.2" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,72.2 37.7,112.0 67.4,84.8 97.1,55.2 126.9,69.4 156.6,101.5 186.3,78.4 216.0,71.7 245.7,102.0 275.4,99.4 305.1,100.5 334.9,76.6 364.6,57.3 394.3,8.0 424.0,8.0 453.7,40.6 483.4,9.6 513.1,47.0 542.9,50.9 572.6,65.4 602.3,52.8 632.0,54.2" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
+<svg class="equity-curve" viewBox="0 0 640 120" role="img" aria-label="Model portfolio equity curve"><polygon points="8,112 8.0,72.2 36.4,112.0 64.7,84.8 93.1,55.2 121.5,69.4 149.8,101.5 178.2,78.4 206.5,71.7 234.9,102.0 263.3,99.4 291.6,100.5 320.0,76.6 348.4,57.3 376.7,8.0 405.1,8.0 433.5,40.6 461.8,9.6 490.2,47.0 518.5,50.9 546.9,65.4 575.3,52.8 603.6,54.2 632.0,23.5 632,112" fill="#2f5c3f" opacity="0.10"/><line x1="8" y1="72.2" x2="632" y2="72.2" stroke="#8b8878" stroke-width="1" stroke-dasharray="3 3"/><polyline points="8.0,72.2 36.4,112.0 64.7,84.8 93.1,55.2 121.5,69.4 149.8,101.5 178.2,78.4 206.5,71.7 234.9,102.0 263.3,99.4 291.6,100.5 320.0,76.6 348.4,57.3 376.7,8.0 405.1,8.0 433.5,40.6 461.8,9.6 490.2,47.0 518.5,50.9 546.9,65.4 575.3,52.8 603.6,54.2 632.0,23.5" fill="none" stroke="#2f5c3f" stroke-width="2"/></svg>
 <div class="stat-strip">
-<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,001,405</span></div>
-<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.1%</span></span></div>
-<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">$1,405</span></div>
+<div class="stat-tile"><span class="stat-label">Equity</span><span class="stat-value">$1,001,847</span></div>
+<div class="stat-tile"><span class="stat-label">Total return</span><span class="stat-value"><span class="pos">+0.2%</span></span></div>
+<div class="stat-tile"><span class="stat-label">Unrealised P&amp;L</span><span class="stat-value">$1,847</span></div>
 <div class="stat-tile"><span class="stat-label">Realised P&amp;L</span><span class="stat-value">$0</span></div>
 <div class="stat-tile"><span class="stat-label">Open positions</span><span class="stat-value">2</span></div>
 <div class="stat-tile"><span class="stat-label">Gross exposure</span><span class="stat-value">4%</span></div>
@@ -29,10 +29,10 @@ result.</p>
 </div>
 <h3>Open positions</h3>
 <div class="table-wrap"><table class="ledger"><thead><tr><th>Ticker</th><th>L/S</th><th>Rating</th><th>Opened</th><th>Entry</th><th>Mark</th><th>Target</th><th>Weight</th><th>Return</th><th>P&amp;L</th></tr></thead><tbody>
-<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$347.30</td><td>$340.00</td><td>1.7%</td><td><span class="pos">+11.5%</span></td><td>$2,261</td></tr>
-<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$977.50</td><td>$940.00</td><td>2.4%</td><td><span class="neg">-3.4%</span></td><td>-$856</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-avgo/' | relative_url }}">AVGO</a></td><td><span class="direction short">S</span></td><td><span class="badge sell">Sell</span></td><td>2026-08-18</td><td>$392.52</td><td>$357.61</td><td>$340.00</td><td>1.8%</td><td><span class="pos">+8.9%</span></td><td>$1,745</td></tr>
+<tr><td><a href="{{ '/research/2026-08-18-mu/' | relative_url }}">MU</a></td><td><span class="direction long">L</span></td><td><span class="badge hold">Hold</span></td><td>2026-08-18</td><td>$1,011.75</td><td>$1,015.80</td><td>$940.00</td><td>2.5%</td><td><span class="pos">+0.4%</span></td><td>$101</td></tr>
 </tbody></table></div>
-<p class="stamp">Marks refreshed 17 Sep 2026 23:35 UTC.</p>
+<p class="stamp">Marks refreshed 18 Sep 2026 23:25 UTC.</p>
 <!-- PORTFOLIO:END -->
 
 <div class="disclaimer">
